@@ -4,6 +4,6 @@ Beranda
 @endsection
 @section('content')
 <div class="container">
-    <h1>Selamat datang</h1>
+    <h3>Selamat datang, {{ $nama }} ({{ $level }})</h3>
 </div>
 @endsection

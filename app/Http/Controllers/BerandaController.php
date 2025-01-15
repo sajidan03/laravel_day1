@@ -8,6 +8,8 @@ class BerandaController extends Controller
 {
     //
     public function index() {
-        return view('home');
+        $nama = 'Sajidan';
+        $level = 'Admin';
+        return view('home', compact('nama','level'));
     }
 }
