@@ -11,7 +11,7 @@ class ProdukController extends Controller
         $produk = [
             ['nama' => 'Monitor', 'harga' => 1000000, 'gambar' => '3060.jpg'],
             ['nama' => 'Keyboard', 'harga' => 500000, 'gambar' => 'ryzen.png'],
-            ['nama' => 'Mouse', 'harga' => 200000, 'gambar' => '3060.jpg'],
+            ['nama' => 'Mouse', 'harga' => 200000, 'gambar' => 'mobo.png'],
         ];
         return view('produk', compact('produk'));
     }
