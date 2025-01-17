@@ -23,16 +23,16 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('home') }}">About</a>
+                </li>
+            <li class="nav-item">
+                  <a class="nav-link" href="{{ route('produk') }}">Keranjang</a>
+                </li>
+            <li class="nav-item">
                 <a href="#" class="nav-link">Help</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produk</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Link 1</a></li>
                   <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -48,16 +48,6 @@
         </div>
       </nav>
     </nav>
-    <div class="container mt-5">
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
-    </div>
     @yield('content')
 </body>
 </html>
