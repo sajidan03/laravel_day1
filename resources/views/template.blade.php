@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #171A21;">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: var(--color-main);">
         <div class="container">
             <img src="{{ asset('assets/pngtree-the-online-shop-logo-uses-a-colorful-house-concept-png-image_3096020-removebg-preview.png')}}" alt=""  style="width:36px; margin-right: 10px;" class="rounded-pill" class="navbar-brand">
           <a class="navbar-brand" href="#">
@@ -23,15 +24,15 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="{{ route('home') }}">About</a>
+                  <a class="nav-link" href="{{ route('about') }}">About</a>
                 </li>
             <li class="nav-item">
                   <a class="nav-link" href="{{ route('produk') }}">Keranjang</a>
                 </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Help</a>
-              </li>
-              <li class="nav-item dropdown">
+            </li>
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produk</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Link 1</a></li>

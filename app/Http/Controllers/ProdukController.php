@@ -9,9 +9,14 @@ class ProdukController extends Controller
     //
     public function index() {
         $produk = [
-            ['nama' => 'Monitor', 'harga' => 1000000, 'gambar' => '3060.jpg'],
-            ['nama' => 'Keyboard', 'harga' => 500000, 'gambar' => 'ryzen.png'],
-            ['nama' => 'Mouse', 'harga' => 200000, 'gambar' => 'mobo.png'],
+            ['nama' => 'Vga Card', 'harga' => 1000000, 'gambar' => 'rtx.webp'],
+            ['nama' => 'CPU', 'harga' => 500000, 'gambar' => 'cu.jpg'],
+            ['nama' => 'Motherboard', 'harga' => 200000, 'gambar' => 'mobo.png'],
+        ];
+        $produk2 = [
+            ['nama2' => 'Vga Card', 'harga2' => 1000000, 'gambar2' => 'rtx.webp'],
+            ['nama2' => 'CPU', 'harga2' => 500000, 'gambar2' => 'cu.jpg'],
+            ['nama2' => 'Motherboard', 'harga2' => 200000, 'gambar2' => 'mobo.png'],
         ];
         return view('produk', compact('produk'));
     }
