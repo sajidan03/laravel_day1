@@ -23,12 +23,12 @@
 <div class="container mt-4">
     <h4>Produk terlaris</h4>
     <div class="d-flex gap-4 justify-between flex-wrap">
-    @foreach ($produk2 as $item2)
+    @foreach ($produk2 as $item)
     <div class="card" style="width:400px">
-        <img src="{{ asset('assets/'.$item2['gambar2']) }}" class="card-img-top" alt="Card image" height="400px">
+        <img src="{{ asset('assets/'.$item['gambar']) }}" class="card-img-top" alt="Card image" height="400px">
         <div class="card-body">
-          <h4 class="card-title">{{ $item['nama2']}}</h4>
-          <p class="card-text">Rp. {{ number_format($item2['harga2'], 0, ',', '.')}}</p>
+          <h4 class="card-title">{{ $item['nama']}}</h4>
+          <p class="card-text">Rp. {{ number_format($item['harga'], 0, ',', '.')}}</p>
         <a href="#" class="btn btn-primary">Beli</a>
         </div>
       </div>
