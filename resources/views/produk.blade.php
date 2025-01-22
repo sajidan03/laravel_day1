@@ -5,7 +5,7 @@
         <h1>Selamat datang di toko kami</h1>
         <p>Temukan game game menarik dari toko kami</p>
       </div>
-    <div class="container mt-4">
+    <div class="container mt-4 ">
         <h4>Produk terbaru</h4>
     <div class="d-flex gap-4 justify-content-between flex-wrap">
     @foreach ( $produk as $item )
@@ -20,9 +20,16 @@
       @endforeach
     </div>
 </div>
+<style>
+.jidan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fa);
+    gap: 6px;
+}
+</style>
 <div class="container mt-4">
     <h4>Produk terlaris</h4>
-    <div class="d-flex gap-4 justify-between flex-wrap">
+    <div class="d-flex gap-4 justify-between flex-wrap jidan">
     @foreach ($produk2 as $item)
     <div class="card" style="width:400px">
         <img src="{{ asset('assets/'.$item['gambar']) }}" class="card-img-top" alt="Card image" height="400px">
