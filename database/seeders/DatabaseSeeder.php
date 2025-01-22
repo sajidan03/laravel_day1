@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Member;
+use App\Models\Category;
+use App\Models\Product;
 use Faker\Guesser\Name;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -42,6 +44,40 @@ class DatabaseSeeder extends Seeder
             'no_hp' => "080330005076",
             'address' => "Sukarame",
             'users_id' => 2,
+        ]);
+
+        Category::create([
+            'id' => 1,
+            'name' => 'Processor'
+        ]);
+        Category::create([
+            'id' => 2,
+            'name' => 'Vga Card'
+        ]);
+        Category::create([
+            'id' => 3,
+            'name' => 'Motherboard'
+        ]);
+        Product::create([
+            'id' => 1,
+            'name' => 'Amd Ryzen 5 5600',
+            'price' => 1600000,
+            'desc' => 'Amd Ryzen 5 5600 Up to 4,4Ghz 6c/12t',
+            'categories_id' => 1,
+        ]);
+        Product::create([
+            'id' => 2,
+            'name' => 'Nvidia RTX 3060 12GB EVGA',
+            'price' => 3100000,
+            'desc' => 'Nvidia RTX 3060 12GB EVGA OC',
+            'categories_id' => 2,
+        ]);
+        Product::create([
+            'id' => 3,
+            'name' => 'Asus ROG Z970 PRO WIFI',
+            'price' => 4000000,
+            'desc' => 'Asus ROG Z970 PRO WIFI',
+            'categories_id' => 3,
         ]);
     }
 }
