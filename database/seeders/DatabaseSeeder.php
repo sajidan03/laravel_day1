@@ -63,6 +63,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Amd Ryzen 5 5600',
             'price' => 1600000,
             'desc' => 'Amd Ryzen 5 5600 Up to 4,4Ghz 6c/12t',
+            'image' => 'ryzen.png',
             'categories_id' => 1,
         ]);
         Product::create([
@@ -70,6 +71,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Nvidia RTX 3060 12GB EVGA',
             'price' => 3100000,
             'desc' => 'Nvidia RTX 3060 12GB EVGA OC',
+            'image' => 'rtx.webp',
             'categories_id' => 2,
         ]);
         Product::create([
@@ -77,6 +79,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Asus ROG Z970 PRO WIFI',
             'price' => 4000000,
             'desc' => 'Asus ROG Z970 PRO WIFI',
+            'image' => 'mobo.jpg',
             'categories_id' => 3,
         ]);
     }
