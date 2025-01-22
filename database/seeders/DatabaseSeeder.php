@@ -63,7 +63,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Amd Ryzen 5 5600',
             'price' => 1600000,
             'desc' => 'Amd Ryzen 5 5600 Up to 4,4Ghz 6c/12t',
-            'image' => 'ryzen.png',
+            'image' => 'ryzen5.avif',
             'categories_id' => 1,
         ]);
         Product::create([
@@ -81,6 +81,14 @@ class DatabaseSeeder extends Seeder
             'desc' => 'Asus ROG Z970 PRO WIFI',
             'image' => 'mobo.jpg',
             'categories_id' => 3,
+        ]);
+        Product::create([
+            'id' => 4,
+            'name' => 'Intel i7-12700F',
+            'price' => 4000000,
+            'desc' => 'Asus ROG Z970 PRO WIFI',
+            'image' => 'i7-12700f.avif',
+            'categories_id' => 1,
         ]);
     }
 }
