@@ -9,4 +9,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [BerandaController::class, 'index'])->name('landing');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/produk', [ProdukController::class, 'index'])->name('produk');
-Route::get('/home', [ProdukController::class, 'index'])->name('home');
+Route::get('/home', [BerandaController::class, 'index'])->name('home');

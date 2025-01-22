@@ -10,10 +10,11 @@ About
       <a href="#" class="btn btn-light btn-lg">Learn More</a>
     </div>
   </section> --}}
-  <div class="container">
-    <div class="sajidan p-5 bg-primary text-white text-center">
-    <h1>Selamat datang di toko kami</h1>
-    <p>Temukan game game menarik dari toko kami</p>
+  <div class="container ">
+    <div class="mt-4 p-5 text-white text-center rounded" style="background-color: var(--color-main)">
+        <h1>Selamat datang di toko kami</h1>
+        <p>Temukan komponen komputer di toko kami dengan harga terjangkau!</p>
+    </div>
   </div>
 @endsection
 

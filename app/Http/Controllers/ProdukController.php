@@ -22,8 +22,9 @@ class ProdukController extends Controller
         //     ['nama' => 'Motherboard', 'harga' => 200000, 'gambar' => 'mobo.png'],
         // ];
         $category = Category::all();
-        $produk = Product::orderBy('created_at', 'desc')->limit(3)->get();
+        $produk = Product::orderBy('created_at', 'desc')->get();
         // $produk = Product::orderBy('created_at', 'desc')->get();
+        // dd($category[0]->product);
         return view('produk', compact('produk', 'category'));
     }
 }
