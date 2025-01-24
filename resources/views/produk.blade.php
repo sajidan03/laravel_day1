@@ -27,7 +27,7 @@
                                     <h4 class="card-title">{{ $item->name }}</h4>
                                     {{-- <p>Nama kategori: {{ $product->category->name }}</p>0 --}}
                                     <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }}</p>
-                                    <a href="#" class="btn btn-primary">Beli</a>
+                                    <a href="{{ route('detail') }}" class="btn btn-primary">Beli</a>
                                 </div>
                             </div>
                         @endforeach

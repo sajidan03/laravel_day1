@@ -27,4 +27,7 @@ class ProdukController extends Controller
         // dd($category[0]->product);
         return view('produk', compact('produk', 'category'));
     }
+    public function detail() {
+        return view('detail');
+    }
 }

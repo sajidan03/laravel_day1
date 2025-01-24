@@ -27,13 +27,13 @@
                   <a class="nav-link" href="{{ route('about') }}">About</a>
                 </li>
             <li class="nav-item">
-                  <a class="nav-link" href="{{ route('produk') }}">Keranjang</a>
+                  <a class="nav-link" href="{{ route('produk') }}">Produk</a>
                 </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Help</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produk</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Kategori</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Link 1</a></li>
                   <li><a class="dropdown-item" href="#">Link 2</a></li>
