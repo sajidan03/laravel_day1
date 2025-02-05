@@ -35,6 +35,7 @@ class ProdukController extends Controller
         return view('detail', compact('product'));
     }
     public function product() {
-        return view('admin.produk');
+        $data['product'] = Product::orderBy('created_at', 'desc')->get();
+        return view('admin.produk', $data);
     }
 }
