@@ -38,4 +38,29 @@ class ProdukController extends Controller
         $data['product'] = Product::orderBy('created_at', 'desc')->get();
         return view('admin.produk', $data);
     }
+    public function create() {
+        $data['category'] = Category::all();
+        return view('admin.product-create', $data);
+    }
+    public function store(Request $request) {
+        $validation = $request->validate([
+            'name' => 'required|max:50|string',
+            'price' => 'required|numeric|min:0',
+            'desc' => 'required|string',
+            'categories' => 'required',
+        ]);
+        $validation['image'] = '-';
+        Product::create($validation);
+        //
+        // Product::create([
+        //     'name' => $request->name,
+        //     'price' => $request->price,
+        //     'desc' => $request->descriptions,
+        //     'image' => '-',
+        //     'categories_id' => $request->categories_id,
+        // ]);
+
+        // return redirect()->back();
+        return redirect('admin/product')->with('Successs', 'Data produk berhasil disimpan');
+    }
 }

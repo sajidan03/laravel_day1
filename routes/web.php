@@ -13,6 +13,8 @@ Route::get('/produk', [ProdukController::class, 'index'])->name('produk');
 Route::get('/home', [BerandaController::class, 'index'])->name('home');
 Route::get('/produk/detail', [ProdukController::class, 'detail'])->name('detail');
 Route::get('/detail/{id}', [ProdukController::class, 'show'])->name('detail');
-// 
+//
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/admin/produk', [ProdukController::class, 'product']);
+Route::get('/admin/produk/create', [ProdukController::class, 'create'])->name('product-create');
+Route::post('/admin/produk/create', [ProdukController::class, 'store'])->name('product-store');

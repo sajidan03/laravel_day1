@@ -33,19 +33,19 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Help</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Kategori</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Link 1</a></li>
                             <li><a class="dropdown-item" href="#">Link 2</a></li>
                             <li><a class="dropdown-item" href="#">Link 3</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
-                <form class="d-flex ms-auto">
+                {{-- <form class="d-flex ms-auto">
                     <input class="form-control me-2" type="text" placeholder="Search">
                     <button class="btn btn-success" type="button">Search</button>
-                </form>
+                </form> --}}
             </div>
         </div>
     </nav>

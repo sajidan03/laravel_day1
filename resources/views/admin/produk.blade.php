@@ -1,7 +1,15 @@
 @extends('admin.template')
 @section('content')
 <div class="container mt-4">
-    <h4>Data product</h4>
+    <div class="d-flex justify-content-between">
+        <h4>Data product</h4>
+        <a href="{{ route('product-create') }}" class="btn btn-sm btn-primary">Add new</a>
+    </div>
+    {{-- @if (Storage::get('success') !== null)
+        <div class="alert alert-success">
+            {{ Storage::get('success'); }}
+        </div>
+    @endif --}}
     <table class="table table-striped">
         <thead>
             <tr>
