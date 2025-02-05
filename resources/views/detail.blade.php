@@ -6,11 +6,11 @@
 <div class="container p-5 mt-5 d-flex align-items-center justify-content-center">
     <div class="row mt-3">
         <div class="col-md-4 d-flex justify-content-center">
-            <img src="{{ asset('assets/ryzen5.avif') }}" width="75%" height="100%" style="object-fit: cover" alt="">
+            <img src="{{ asset('assets/' . $product->image) }}" class="card-img-top" alt="{{ $product->name }}" height="400px">
         </div>
         <div class="col-md-5">
-            <h4>Ryzen 5 5600 4.4Ghz</h4>
-            <h3>Rp. 1.630.000</h3>
+            <h4 class="card-title">{{ $product->name }}</h4>
+            <h3 class="card-text">Rp. {{ number_format($product->price, 0, ',', '.') }}</h3>
             <ul class="nav nav-tabs mt-4">
                 <li class="nav-item">
                     <a href="#detail" class="nav-link active" data-bs-toggle="tab">Detail</a>
@@ -24,7 +24,7 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="detail">
-                    <pre>
+                    {{-- <pre>
 AMD Ryzen 5 5600 adalah prosesor desktop dengan 6 inti yang menggunakan arsitektur Zen 3 (Vermeer). Prosesor ini dirilis pada bulan April 2022.
 Berikut adalah spesifikasi AMD Ryzen 5 5600:
 Soket CPU AM4
@@ -37,7 +37,7 @@ Default TDP 65 W
 Unlocked for overclocking
 Max operating temperature (Tjmax) 90°C
 AMD Ryzen 5 5600 mendukung sistem operasi Windows 10 dan Windows 11 versi 64-bit, RHEL x86 64-bit, dan Ubuntu x86 64-bit.
-                    </pre>
+                    </pre> --}}
                 </div>
                 <div class="tab-pane fade" id="spesifikasi">
                     <pre>Konten spesifikasi</pre>

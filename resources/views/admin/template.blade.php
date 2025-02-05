@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: var(--color-main);">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="{{ asset('assets/pngtree-the-online-shop-logo-uses-a-colorful-house-concept-png-image_3096020-removebg-preview.png')}}"
                      alt="Logo" style="width:36px; margin-right: 10px;" class="rounded-pill">
                 JByte
@@ -22,13 +22,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link" href="/admin/member">Member</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about') }}">About</a>
+                        <a class="nav-link" href="/admin/kategori">Kategori</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('produk') }}">Produk</a>
+                        <a class="nav-link" href="/admin/produk">Produk</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Help</a>

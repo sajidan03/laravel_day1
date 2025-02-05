@@ -21,13 +21,20 @@ class ProdukController extends Controller
         //     ['nama' => 'CPU', 'harga' => 500000, 'gambar' => 'cu.jpg'],
         //     ['nama' => 'Motherboard', 'harga' => 200000, 'gambar' => 'mobo.png'],
         // ];
-        $category = Category::all();
-        $produk = Product::orderBy('created_at', 'desc')->get();
         // $produk = Product::orderBy('created_at', 'desc')->get();
         // dd($category[0]->product);
+        $category = Category::all();
+        $produk = Product::orderBy('created_at', 'desc')->get();
         return view('produk', compact('produk', 'category'));
     }
     public function detail() {
         return view('detail');
+    }
+    public function show($id){
+        $product = Product::findOrFail($id);
+        return view('detail', compact('product'));
+    }
+    public function product() {
+        return view('admin.produk');
     }
 }

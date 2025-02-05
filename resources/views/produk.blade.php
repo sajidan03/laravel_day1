@@ -1,7 +1,7 @@
 @extends('template')
 @section('content')
-<div class="container pt-5">
-    <div class="mt-4 p-5 text-white text-center rounded" style="background-color: var(--color-main)">
+<div class="container">
+    <div class=" p-5 text-white text-center rounded" style="background-color: var(--color-main)">
         <h1>Selamat datang di toko kami</h1>
         <p>Temukan komponen komputer di toko kami dengan harga terjangkau!</p>
     </div>
@@ -27,7 +27,8 @@
                                     <h4 class="card-title">{{ $item->name }}</h4>
                                     {{-- <p>Nama kategori: {{ $product->category->name }}</p>0 --}}
                                     <p class="card-text">Rp. {{ number_format($item->price, 0, ',', '.') }}</p>
-                                    <a href="{{ route('detail') }}" class="btn btn-primary">Beli</a>
+                                    {{-- <a href="{{ route('detail') }}" class="btn btn-primary">Beli</a> --}}
+                                    <a href="{{ route('detail', ['id' => $item->id]) }}" class="btn btn-primary">Beli</a>
                                 </div>
                             </div>
                         @endforeach
